@@ -1,2 +1,55 @@
 name : atharva
 surname : trivedi
+mkdir partb
+
+
+    Directory: C:\Users\xyzdu\Desktop\wad
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        28-04-2025     20:02                partb
+
+
+PS C:\Users\xyzdu\Desktop\wad> cd partb
+PS C:\Users\xyzdu\Desktop\wad\partb> git --version
+git version 2.49.0.windows.1
+PS C:\Users\xyzdu\Desktop\wad\partb> git init
+Initialized empty Git repository in C:/Users/xyzdu/Desktop/wad/partb/.git/
+PS C:\Users\xyzdu\Desktop\wad\partb> git add file1.txt
+PS C:\Users\xyzdu\Desktop\wad\partb> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.txt
+
+PS C:\Users\xyzdu\Desktop\wad\partb> git remote add origin "https://github.com/Atharva-tri/ass2a"
+PS C:\Users\xyzdu\Desktop\wad\partb> git commit -m "Frist letter"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'xyzdu@atharva.(none)')
+PS C:\Users\xyzdu\Desktop\wad\partb> git config --global user.name "Atharva"  
+PS C:\Users\xyzdu\Desktop\wad\partb> git config --global user.email "athrvatrivedi522000@gmail.com"  
+PS C:\Users\xyzdu\Desktop\wad\partb> git remote add origin "https://github.com/Atharva-tri/ass2a"
+error: remote origin already exists.
+PS C:\Users\xyzdu\Desktop\wad\partb> git commit -m "atharva"     
+[master (root-commit) 14d5c2c] atharva
+ 1 file changed, 2 insertions(+)
+ create mode 100644 file1.txt
+PS C:\Users\xyzdu\Desktop\wad\partb> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\xyzdu\Desktop\wad\partb> git push -u origin master
